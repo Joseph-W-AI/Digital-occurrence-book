@@ -1,0 +1,33 @@
+###
+## REGISTER USER
+POST http://127.0.0.1:5000/register
+Content-Type: application/json
+
+{
+    "username": "isoo",
+    "password": "3W!W.:srzc4r^!P",
+    "role":"user"
+}
+
+###
+## LOGIN USER
+POST http://127.0.0.1:5000/login
+Content-Type: application/json
+
+{
+    "username": "Robinson",
+    "password": "3W!W.:srzc4r^!P"
+}
+
+
+###
+# GET USERS 
+GET http://127.0.0.1:5000/users
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE3MDYxNzkwMDN9.A-mmbzY8grSFHS5oRFnkIrELDXSBKA_D3OZqc7vtzlM
+
+###
+# GET INDIVIDUAL USER
+GET http://127.0.0.1:5000/users/1
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE3MDYxNzkyODd9.p6TpuavLDCQN9UEsWyBOU1S3X3I1ux8CXo_gMJdkha8
